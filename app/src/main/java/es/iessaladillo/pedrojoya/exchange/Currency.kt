@@ -5,7 +5,7 @@ import androidx.annotation.DrawableRes
 enum class Currency(
     val symbol: String,
     @field:DrawableRes val drawableResId: Int,  // Icon
-    private val asDollar: Double // The value in dollars of 1 unit of the currency
+    val asDollar: Double // The value in dollars of 1 unit of the currency
 ) {
 
     DOLLAR("$", R.drawable.ic_dollar, 1.0),
